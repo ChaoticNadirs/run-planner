@@ -10,7 +10,7 @@ const schema = yup.object().shape({
   seconds: yup
     .number()
     .required()
-    .positive()
+    .min(0)
     .integer()
     .max(59),
   day: yup
