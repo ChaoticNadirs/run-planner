@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faRunning } from "@fortawesome/free-solid-svg-icons";
 import Container from "../container/container";
 
 const StyledHeader = styled.header`
@@ -13,6 +14,8 @@ const StyledHeader = styled.header`
     margin: 0;
     font-weight: normal;
     font-size: 1.75rem;
+    display: inline;
+    margin-left: 1rem;
   }
 
   a {
@@ -36,7 +39,10 @@ const Header = () => {
     <StyledHeader>
       <Container>
         <Nav>
-          <h1>Run Planner</h1>
+          <div>
+            <FontAwesomeIcon icon={faRunning} size="2x" />
+            <h1>Run Planner</h1>
+          </div>
           <a href="https://github.com/ChaoticNadirs/run-planner">
             <FontAwesomeIcon icon={faGithub} size="2x" />
           </a>
