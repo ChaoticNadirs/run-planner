@@ -30,8 +30,7 @@ function App() {
         <Header />
         <Container>
           <Intro>
-            This site calculates a marathon training plan based on a 10km time.
-            The site plugs your 10km pace into the{" "}
+            The{" "}
             <a
               href="https://www.runnersworld.com/uk/health/a762493/the-first-three-day-a-week-marathon-schedule/"
               target="_blank"
@@ -39,8 +38,10 @@ function App() {
             >
               FIRST 3 day a week
             </a>{" "}
-            training plan and generates an estimated pace for each of the
-            training runs.
+            training plan requires some calculations to figure out your training
+            run paces. Enter your 10km time and marathon date and a personalized
+            training calendar based on that plan will be generated. You can save
+            your preferences to your browser.
           </Intro>
           <PreferencesProvider>
             <Preferences />
