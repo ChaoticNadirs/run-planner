@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from "react-ga";
 import styled, { ThemeProvider } from "styled-components";
 import theme from "./theme";
 import GlobalStyle from "./global-style";
@@ -23,6 +24,11 @@ const Intro = styled.p`
 `;
 
 function App() {
+  useEffect(() => {
+    ReactGA.initialize("UA-48557775-6");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
   return (
     <>
       <GlobalStyle theme={theme} />
