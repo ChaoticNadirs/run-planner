@@ -32,7 +32,11 @@ function App() {
           <Intro>
             This site calculates a marathon training plan based on a 10km time.
             The site plugs your 10km pace into the{" "}
-            <a href="https://www.runnersworld.com/uk/health/a762493/the-first-three-day-a-week-marathon-schedule/">
+            <a
+              href="https://www.runnersworld.com/uk/health/a762493/the-first-three-day-a-week-marathon-schedule/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               FIRST 3 day a week
             </a>{" "}
             training plan and generates an estimated pace for each of the

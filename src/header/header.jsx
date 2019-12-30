@@ -14,6 +14,15 @@ const StyledHeader = styled.header`
     font-weight: normal;
     font-size: 1.75rem;
   }
+
+  a {
+    color: ${props => props.theme.colors.text};
+    transition: 0.15s ease-in-out;
+
+    :hover {
+      color: ${props => props.theme.colors.primary};
+    }
+  }
 `;
 
 const Nav = styled.nav`
@@ -27,8 +36,10 @@ const Header = () => {
     <StyledHeader>
       <Container>
         <Nav>
-          <h1>Marathon Planner</h1>
-          <FontAwesomeIcon icon={faGithub} size="2x" />
+          <h1>Run Planner</h1>
+          <a href="https://github.com/ChaoticNadirs/run-planner">
+            <FontAwesomeIcon icon={faGithub} size="2x" />
+          </a>
         </Nav>
       </Container>
     </StyledHeader>
